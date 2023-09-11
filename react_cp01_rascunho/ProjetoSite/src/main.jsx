@@ -5,14 +5,17 @@ import Home from './componentes/Home.jsx'
 import Produtos from './componentes/Produtos.jsx'
 import './index.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Sobre from './componentes/Sobre.jsx'
+
 
 const router = createBrowserRouter([
   {
     path: '/',element: <App/>,
 
     children:[
-      {path:'/', element:<Home/>},
+      {path:'Home', element:<Home/>},
       {path:'/Produtos',element:<Produtos/>},
+      {path:'/Sobre',element:<Sobre/>},
     ]
   }
 ])

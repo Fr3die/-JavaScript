@@ -1,28 +1,17 @@
-import {useState} from 'react'
+import {} from 'react'
 
 function Produtos() {
 
-  const [lista,setLista] = useState([]);
-  const [count,setCount] = useState(0);
-  const aumentar =()=>setCount(count +1)
-  const diminuir =()=>setCount(count -1)
-  const adicionarLista=()=>setLista([...lista,Math.random(100).toFixed])
-
   return (
     <>
-      <fieldset>
-        <legend>UseState</legend>
-        <p>Valor:{count}</p>
-        <button onClick={aumentar}>Aumentar</button>
-        <button onClick={diminuir}>Diminuir</button>
-      </fieldset>
-      <fieldset>
-        <legend>Exemplo2</legend>
-        <ul>
-          {lista.map((n,i) => <li key={i}>{n}</li>)}
-        </ul>
-        <button onClick={adicionarLista}>Lista</button>
-      </fieldset>
+      <h1>Foto Nº1</h1>
+        <img src="http://lorempixel.com.br/200/200/?1" alt="foto1" />
+      <h1>Foto Nº2</h1>  
+        <img src="http://lorempixel.com.br/200/200/?2" alt="foto2" />
+      <h1>Foto Nº3</h1>  
+        <img src="http://lorempixel.com.br/200/200/?3" alt="foto3" />
+      <h1>Foto Nº4</h1>
+        <img src="http://lorempixel.com.br/200/200/?4" alt="foto4" />
     </>
   )
 }
